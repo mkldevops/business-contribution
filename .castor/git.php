@@ -55,7 +55,7 @@ function autoCommit(?string $message = null): void
 function rebase(): void
 {
     run('git pull --rebase');
-    run('git pull --rebase origin develop');
+    run('git pull --rebase origin main');
 }
 
 #[AsTask(description: 'git commit and push')]
